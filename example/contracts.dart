@@ -4,8 +4,10 @@ import 'package:web_socket_channel/io.dart';
 
 import 'token.g.dart';
 
-const String rpcUrl = 'http://localhost:8545';
-const String wsUrl = 'ws://localhost:8545';
+const String rpcUrl =
+    'https://ropsten.infura.io/v3/59c7c60ac78c4f5897e4e63fd0e909c5';
+const String wsUrl =
+    'wss://ropsten.infura.io/ws/v3/59c7c60ac78c4f5897e4e63fd0e909c5';
 
 const String privateKey =
     '9a43d93a50b622761d88c80c90567c02c82442746335a01b72f49b3c867c037d';
@@ -13,7 +15,7 @@ const String privateKey =
 final EthereumAddress contractAddr =
     EthereumAddress.fromHex('0xeE9312C22890e0Bd9a9bB37Fd17572180F4Fc68a');
 final EthereumAddress receiver =
-    EthereumAddress.fromHex('0x6c87E1a114C3379BEc929f6356c5263d62542C13');
+    EthereumAddress.fromHex('0xF083Afee2B1Af70D0718d831c535682f619307F7');
 
 /*
 Examples that deal with contracts. The contract used here is from the truffle
